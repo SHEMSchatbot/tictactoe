@@ -1,0 +1,76 @@
+#themeBtn{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    height: 30px;
+    width: 90px;
+    box-shadow: 0px 0px 15px rgb(233, 233, 233);
+    color:#e7e7e7; 
+    background-color: #676767;
+    display: block;
+    position: absolute;
+    left: 90%;
+    cursor:default;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(153, 255, 0);
+    font-size: 78px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: rgb(62, 103, 0);
+    box-shadow: 4px 4px 0px 2px;
+    background-image: linear-gradient(to bottom right,rgb(126, 209, 0),rgb(85, 141, 1));
+}
+#gameContainer{
+    text-align: center;
+    color: greenyellow;
+    font-size: 25px;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 309px;
+    margin: auto;
+}
+#restartBtn{
+    color: greenyellow;
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333333;
+    text-shadow: 0px 0px 15px;
+    user-select: none;
+}
+body{
+    overflow: hidden;
+}
+
+#statusText{
+    color: #aaaaaa;
+}
+.cell:hover{
+    background-image: linear-gradient(to bottom right,rgb(153, 254, 0),rgb(95, 158, 0));
+}
+.cell:active{
+    background-image: linear-gradient(to bottom right,rgb(184, 255, 78),rgb(200, 255, 116));
+}
+#restartBtn:hover{
+    background-color: rgb(126, 210, 0);
+}
+#themeBtn:hover{
+    cursor: pointer;
+    background-color: rgb(142, 142, 142);
+}
+#themeBtn:active{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(45, 45, 45);
+}
