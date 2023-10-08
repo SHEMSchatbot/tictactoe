@@ -23,11 +23,6 @@
     box-shadow: 4px 4px 0px 2px;
     background-image: linear-gradient(to bottom right,rgb(126, 209, 0),rgb(85, 141, 1));
 }
-#gameContainer{
-    text-align: center;
-    color: greenyellow;
-    font-size: 25px;
-}
 #cellContainer{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -64,7 +59,11 @@ body{
 }
 #restartBtn:hover{
     background-color: rgb(126, 210, 0);
+    color: #333;
+    border: 2px solid greenyellow;
 }
+#restartBtn:active{
+    background-image: linear-gradient(to bottom right,rgb(184, 255, 78),rgb(200, 255, 116));}
 #themeBtn:hover{
     cursor: pointer;
     background-color: rgb(142, 142, 142);
@@ -74,3 +73,16 @@ body{
     cursor: pointer;
     color: rgb(45, 45, 45);
 }
+#gameContainer{
+    text-align: center;
+    color: rgb(203, 255, 126);
+    font-size: 25px;
+}
+#gameContainer p{
+    font-size: 50px;
+}
+#gameContainer p:hover{
+    text-shadow: 0 0 20px;
+    color: rgb(233, 255, 199)
+    }
+    
